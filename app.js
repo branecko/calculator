@@ -24,7 +24,11 @@ for (let button of allNumButtons) {
 // 5. opakujte postup z kroku 3 a 4 aj pre buttony s operatormi (+, -, x, /, .). 
 //    Musite najst sposob, ako vybrat len buttony s textom +, -, x, /, . 
 //    (hint: pridajte nieco do index.html, aby ste ich vedeli identifikovat. Uprava index.html bude potrebna aj pri bodoch 6,7 a 9). 
-// const allOperatorButtons;
+const allOperatorButtons = document.querySelectorAll('.button-operator');
+for (let button of allOperatorButtons) {
+    button.addEventListener('click', () => insertValueFn(button.textContent));
+    // button.onclick(() => insertValueFn(button.textContent));
+}
 
 // 6. Pristupte k elementu ⌦ na vymazanie jedneho znaku a ulozte si ho do konstanty.
 //    Implementujte jeho funkcionalitu tak, aby sa po kliknuti nan vymazal posledny znak z displeja.
