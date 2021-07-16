@@ -15,7 +15,11 @@ const allNumButtons = document.querySelectorAll('.button-num');
 // A) S vyuzitim cyklu, prejdite cez vsetky elementy ulozene v allNumButtons.
 // B) Zaistite, aby sa po kliknuti na kazdy button z pola 'allNumButtons' vykonala funkcia insertValueFn (vyuzite event click).
 //    Ako argument vo funkcii insertValueFn pouzite text, ktory ma v sebe prave stlaceny button.
-
+for (let button of allNumButtons) {
+    button.addEventListener('click', () => insertValueFn(button.textContent));
+    // dalsi sposob ako to zapisat:
+    // button.onclick(() => insertValueFn(button.textContent));
+}
 
 // 5. opakujte postup z kroku 3 a 4 aj pre buttony s operatormi (+, -, x, /, .). 
 //    Musite najst sposob, ako vybrat len buttony s textom +, -, x, /, . 
