@@ -40,7 +40,10 @@ eraseNumElement.addEventListener('click',() => {
 
 // 7. Pristupte k elementu C na vymazanie vsetkeho na displeji (myslim ten element).
 //    Implementujte jeho funkcionalitu tak, aby sa po kliknuti nan vymazal cely obsah displeja.
-// const eraseAllElement;
+const eraseAllElement = document.querySelector('.button-delAll');
+eraseAllElement.addEventListener('click',() => {
+    displayElement.textContent = '';
+});
 
 // 8. do konstanty doTheMath priradte nasu funkciu, ktora zoberie priklad z displeja a vypocita ho pomocou funkcie eval()
 // dokumentacia: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval 
