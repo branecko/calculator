@@ -1,5 +1,5 @@
 // 1. ziskajte referenciu na DOM element s triedou 'display' a priradte ju do premennej displayElement
-// const displayElement;
+const displayElement = document.querySelector('.display');
 
 // 2. napiste funkciu, ktora na koniec textu v displayElement prida hodnotu z argumentu funkcie
 // Priklad1: ak displayElement neobsahuje text, tak volanie insertNumberFn(1) zmení sa text z '' na '1'
