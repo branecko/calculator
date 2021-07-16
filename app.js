@@ -52,7 +52,12 @@ const doTheMath = () => {
 };
 
 // 9. pristupte ku elementu = a zaistite, aby sa po kliknuti vykonal vypocet pomocou funkcie doTheMath()
-// const executeElement;
+const executeElement = document.querySelector('#execute');
+executeElement.addEventListener('click', doTheMath);
+// alebo skratene, ak nepotrebujem priradit referenciu do konstanty:
+// document
+//     .querySelector('#execute')
+//     .addEventListener('click', doTheMath);
 
 // 10. bonus - mozno ste uz zistili, ze nasobenie nefunguje.
 // Problemom je, ze na nasobenie pouzivame symbol 'x' namiesto symbolu '*'.
