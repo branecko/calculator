@@ -8,7 +8,7 @@ const insertValueFn = (newValue) => {
     displayElement.textContent += newValue; 
 };
 
-// 3. ziskajte referenciu na vsetky DOM elementy s triedou 'button' a priradte ju do premennej allNumButtons
+// 3. ziskajte referenciu na vsetky DOM elementy s triedou 'button-num' a priradte ju do premennej allNumButtons
 // const allNumButtons;
 
 // 4. 
