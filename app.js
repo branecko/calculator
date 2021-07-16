@@ -6,7 +6,7 @@
 // Priklad2: ak displayElement obsahuje text '11', tak volanie insertNumberFn(2) zmení sa text z '11' na '112'
 // const insertValueFn;
 
-// 3. ziskajte referenciu na vsetky DOM elementy s triedou 'button' a priradte ju do premennej allNumButtons
+// 3. ziskajte referenciu na vsetky DOM elementy s triedou 'button-num' a priradte ju do premennej allNumButtons
 // const allNumButtons;
 
 // 4. 
