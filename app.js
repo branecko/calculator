@@ -9,7 +9,7 @@ const insertValueFn = (newValue) => {
 };
 
 // 3. ziskajte referenciu na vsetky DOM elementy s triedou 'button-num' a priradte ju do premennej allNumButtons
-// const allNumButtons;
+const allNumButtons = document.querySelectorAll('.button-num');
 
 // 4. 
 // A) S vyuzitim cyklu, prejdite cez vsetky elementy ulozene v allNumButtons.
