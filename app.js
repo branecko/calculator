@@ -32,7 +32,11 @@ for (let button of allOperatorButtons) {
 
 // 6. Pristupte k elementu ⌦ na vymazanie jedneho znaku a ulozte si ho do konstanty.
 //    Implementujte jeho funkcionalitu tak, aby sa po kliknuti nan vymazal posledny znak z displeja.
-// const eraseNumElement;
+const eraseNumElement = document.querySelector('.button-delOne');
+eraseNumElement.addEventListener('click',() => {
+    displayElement.textContent = displayElement.textContent.slice(0, displayElement.textContent.length - 1)
+    // displayElement.textContent = displayElement.textContent.substring(0, displayElement.textContent.length - 1)
+});
 
 // 7. Pristupte k elementu C na vymazanie vsetkeho na displeji (myslim ten element).
 //    Implementujte jeho funkcionalitu tak, aby sa po kliknuti nan vymazal cely obsah displeja.
