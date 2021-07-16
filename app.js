@@ -4,7 +4,9 @@ const displayElement = document.querySelector('.display');
 // 2. napiste funkciu, ktora na koniec textu v displayElement prida hodnotu z argumentu funkcie
 // Priklad1: ak displayElement neobsahuje text, tak volanie insertNumberFn(1) zmení sa text z '' na '1'
 // Priklad2: ak displayElement obsahuje text '11', tak volanie insertNumberFn(2) zmení sa text z '11' na '112'
-// const insertValueFn;
+const insertValueFn = (newValue) => {
+    displayElement.textContent += newValue; 
+};
 
 // 3. ziskajte referenciu na vsetky DOM elementy s triedou 'button' a priradte ju do premennej allNumButtons
 // const allNumButtons;
