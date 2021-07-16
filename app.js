@@ -48,7 +48,8 @@ eraseAllElement.addEventListener('click',() => {
 // 8. do konstanty doTheMath priradte nasu funkciu, ktora zoberie priklad z displeja a vypocita ho pomocou funkcie eval()
 // dokumentacia: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval 
 const doTheMath = () => {
-    displayElement.textContent = eval(displayElement.textContent);
+    const calculationString = displayElement.textContent.replaceAll('x', '*');
+    displayElement.textContent = eval(calculationString);
 };
 
 // 9. pristupte ku elementu = a zaistite, aby sa po kliknuti vykonal vypocet pomocou funkcie doTheMath()
